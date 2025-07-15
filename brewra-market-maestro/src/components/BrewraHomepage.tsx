@@ -341,9 +341,8 @@ const BrewraHomepage = () => {
                       <div className="w-12 h-12 bg-gradient-to-r from-brewra-blue to-brewra-blue-light rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                         <IconComponent className="w-6 h-6 text-white" />
                       </div>
-                      <h3 className="text-xl font-semibold text-slate-800 mb-3 flex items-center gap-2">
+                      <h3 className="text-xl font-semibold text-slate-800 mb-3">
                         {service.title}
-                        {isExternalLink && <ExternalLink className="h-4 w-4 text-brewra-blue" />}
                       </h3>
                       <p className="text-slate-600 leading-relaxed mb-4">{service.description}</p>
                       <p className="text-slate-500 text-sm mb-4">{service.details}</p>
