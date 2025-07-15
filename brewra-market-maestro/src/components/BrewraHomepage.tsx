@@ -56,9 +56,9 @@ const BrewraHomepage = () => {
     icon: Brain,
     details: 'Access our full suite of AI agents including market mappers, script builders, ICP validators, and conversion optimizers.',
     deliverables: ['9 specialized AI agents', 'Workflow automation', 'Performance analytics', '24/7 availability'],
-    link: 'https://brewra-market-mastery.lovable.app/',
+    link: 'https://www.brewra.ai/',
     cta: 'Try Brewra.AI',
-    ctaAction: 'https://brewra-market-mastery.lovable.app/'
+    ctaAction: 'https://www.brewra.ai/'
   }];
   const workingSteps = [{
     step: 'Discover',
@@ -278,7 +278,7 @@ const BrewraHomepage = () => {
               Win New Markets with{' '}
               <span className="gradient-text">Local Experts Backed by AI</span>
             </h1>
-            <p className="text-xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">Brewra Venture helps B2B SaaS companies break into new markets with tailored strategy, local presence, and execution powered by an in-house agentic AI platform.</p>
+            <p className="text-xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">Brewra Ventures helps B2B SaaS companies break into new markets with tailored strategy, local presence, and execution powered by an in-house agentic AI platform.</p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
               <a href="https://calendly.com/brewra_ventures/discovery-call" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="glow-button bg-brewra-blue hover:bg-brewra-blue-dark text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">

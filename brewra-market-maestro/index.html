@@ -10,6 +10,25 @@
 
     <!-- Favicon -->
     <link rel="icon" href="/lovable-uploads/bca0ae6e-76ea-4b64-8615-fb3c09991607.png" type="image/png">
+    
+    <!-- Critical CSS to prevent FOUC -->
+    <style>
+      html, body, #root {
+        background-color: rgb(255, 255, 255);
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        font-family: 'Inter', sans-serif;
+      }
+      
+      /* Dark mode support */
+      @media (prefers-color-scheme: dark) {
+        html, body, #root {
+          background-color: rgb(15, 23, 42);
+          color: rgb(241, 245, 249);
+        }
+      }
+    </style>
 
     <meta property="og:title" content="Brewra - Break Into New Markets with Human + AI Sales Execution" />
     <meta property="og:description" content="Close real B2B SaaS deals faster with local market experts and agentic AI working as one team." />
