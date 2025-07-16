@@ -1,9 +1,11 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { ArrowLeft, Play, ExternalLink, Calendar } from 'lucide-react';
+import { ArrowLeft, Play, ExternalLink, Calendar, Menu, X } from 'lucide-react';
 import Logo from '@/components/Logo';
 const Media = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+  
   const mediaItems = [{
     id: 1,
     type: "Podcast",
@@ -68,19 +70,40 @@ const Media = () => {
               <a href="/#cases" className="hover:text-brewra-blue transition-colors">Case Studies</a>
               <a href="/#contact" className="hover:text-brewra-blue transition-colors">Contact</a>
             </div>
+            
+            {/* Mobile menu button */}
+            <div className="md:hidden">
+              <Button
+                size="sm"
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="bg-brewra-blue hover:bg-brewra-blue-dark text-white transition-colors"
+              >
+                {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              </Button>
+            </div>
           </div>
+
+          {/* Mobile menu */}
+          {isMobileMenuOpen && (
+            <div className="md:hidden border-t border-white/10 bg-black/95 backdrop-blur-sm">
+              <div className="px-4 py-6 space-y-4">
+                <a href="/" className="block hover:text-brewra-blue transition-colors">Home</a>
+                <a href="/about" className="block hover:text-brewra-blue transition-colors">About Us</a>
+                <a href="/#services" className="block hover:text-brewra-blue transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Services</a>
+                <a href="/#approach" className="block hover:text-brewra-blue transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Approach</a>
+                <a href="/blogs" className="block hover:text-brewra-blue transition-colors">Blogs</a>
+                <a href="/media" className="block text-brewra-blue font-medium">Media</a>
+                <a href="/#cases" className="block hover:text-brewra-blue transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Case Studies</a>
+                <a href="/#contact" className="block hover:text-brewra-blue transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Contact</a>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
 
       {/* Hero Section */}
       <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <div className="mb-8">
-            <a href="/" className="inline-flex items-center text-brewra-blue hover:text-brewra-blue-dark transition-colors">
-              <ArrowLeft className="h-4 w-4 mr-2" />
-              Back to Home
-            </a>
-          </div>
           
           <div className="text-center mb-16">
             

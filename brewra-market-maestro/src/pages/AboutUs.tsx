@@ -1,9 +1,11 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { ChevronRight, Users, Brain, Target, Lightbulb } from 'lucide-react';
+import { ChevronRight, Users, Brain, Target, Lightbulb, Menu, X } from 'lucide-react';
 import Logo from '@/components/Logo';
 const AboutUs = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+
   return <div className="min-h-screen bg-brewra-dark text-white">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-brewra-dark/95 backdrop-blur-sm border-b border-white/10">
@@ -18,6 +20,8 @@ const AboutUs = () => {
               <a href="/about" className="text-brewra-blue">About Us</a>
               <a href="/#services" className="hover:text-brewra-blue transition-colors">Services</a>
               <a href="/#approach" className="hover:text-brewra-blue transition-colors">Approach</a>
+              <a href="/blogs" className="hover:text-brewra-blue transition-colors">Blogs</a>
+              <a href="/media" className="hover:text-brewra-blue transition-colors">Media</a>
               <a href="/#cases" className="hover:text-brewra-blue transition-colors">Case Studies</a>
               <a href="/#contact" className="hover:text-brewra-blue transition-colors">Contact</a>
               <a href="mailto:hello@brewra.com?subject=Strategy Call Request&body=Hi, I'd like to schedule a strategy call to discuss market expansion opportunities for my B2B SaaS company.">
@@ -26,7 +30,41 @@ const AboutUs = () => {
                 </Button>
               </a>
             </div>
+            
+            {/* Mobile menu button */}
+            <div className="md:hidden">
+              <Button
+                size="sm"
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="bg-brewra-blue hover:bg-brewra-blue-dark text-white transition-colors"
+              >
+                {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              </Button>
+            </div>
           </div>
+
+          {/* Mobile menu */}
+          {isMobileMenuOpen && (
+            <div className="md:hidden border-t border-white/10 bg-brewra-dark/95 backdrop-blur-sm">
+              <div className="px-4 py-6 space-y-4">
+                <a href="/" className="block hover:text-brewra-blue transition-colors">Home</a>
+                <a href="/about" className="block text-brewra-blue font-medium">About Us</a>
+                <a href="/#services" className="block hover:text-brewra-blue transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Services</a>
+                <a href="/#approach" className="block hover:text-brewra-blue transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Approach</a>
+                <a href="/blogs" className="block hover:text-brewra-blue transition-colors">Blogs</a>
+                <a href="/media" className="block hover:text-brewra-blue transition-colors">Media</a>
+                <a href="/#cases" className="block hover:text-brewra-blue transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Case Studies</a>
+                <a href="/#contact" className="block hover:text-brewra-blue transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Contact</a>
+                <div className="pt-4 border-t border-white/10">
+                  <a href="mailto:hello@brewra.com?subject=Strategy Call Request&body=Hi, I'd like to schedule a strategy call to discuss market expansion opportunities for my B2B SaaS company.">
+                    <Button size="sm" className="w-full bg-brewra-blue hover:bg-brewra-blue-dark text-white transition-colors">
+                      Book a Strategy Call
+                    </Button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
 
