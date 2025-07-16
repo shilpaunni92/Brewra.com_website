@@ -272,10 +272,9 @@ const BrewraHomepage = () => {
             {/* Mobile menu button */}
             <div className="md:hidden">
               <Button
-                variant="ghost"
                 size="sm"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="text-white hover:text-brewra-blue"
+                className="bg-brewra-blue hover:bg-brewra-blue-dark text-white transition-colors"
               >
                 {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </Button>
