@@ -129,16 +129,16 @@ Please send me the GTM Readiness Scorecard based on this information.
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <Label htmlFor="companyName" className="text-gray-700 font-medium">Company Name *</Label>
-                    <Input id="companyName" value={formData.companyName} onChange={e => handleInputChange('companyName', e.target.value)} required className="mt-1 border-gray-300 focus:border-blue-500" />
+                    <Input id="companyName" value={formData.companyName} onChange={e => handleInputChange('companyName', e.target.value)} required className="mt-1 bg-white text-black placeholder:text-gray-500 border-gray-300 focus:border-blue-500 focus-visible:ring-0 focus-visible:ring-offset-0 focus:outline-none" />
                   </div>
                   <div>
                     <Label htmlFor="contactName" className="text-gray-700 font-medium">Your Name *</Label>
-                    <Input id="contactName" value={formData.contactName} onChange={e => handleInputChange('contactName', e.target.value)} required className="mt-1 border-gray-300 focus:border-blue-500" />
+                    <Input id="contactName" value={formData.contactName} onChange={e => handleInputChange('contactName', e.target.value)} required className="mt-1 bg-white text-black placeholder:text-gray-500 border-gray-300 focus:border-blue-500 focus-visible:ring-0 focus-visible:ring-offset-0 focus:outline-none" />
                   </div>
                 </div>
                 <div>
                   <Label htmlFor="email" className="text-gray-700 font-medium">Email Address *</Label>
-                  <Input id="email" type="email" value={formData.email} onChange={e => handleInputChange('email', e.target.value)} required className="mt-1 border-gray-300 focus:border-blue-500" />
+                  <Input id="email" type="email" value={formData.email} onChange={e => handleInputChange('email', e.target.value)} required className="mt-1 bg-white text-black placeholder:text-gray-500 border-gray-300 focus:border-blue-500 focus-visible:ring-0 focus-visible:ring-offset-0 focus:outline-none" />
                 </div>
               </div>
 
@@ -151,16 +151,16 @@ Please send me the GTM Readiness Scorecard based on this information.
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <Label htmlFor="currentMarket" className="text-gray-700 font-medium">Current Market/Geography *</Label>
-                    <Input id="currentMarket" value={formData.currentMarket} onChange={e => handleInputChange('currentMarket', e.target.value)} placeholder="e.g., India, US West Coast" required className="mt-1 border-gray-300 focus:border-blue-500" />
+                    <Input id="currentMarket" value={formData.currentMarket} onChange={e => handleInputChange('currentMarket', e.target.value)} placeholder="e.g., India, US West Coast" required className="mt-1 bg-white text-black placeholder:text-gray-500 border-gray-300 focus:border-blue-500 focus-visible:ring-0 focus-visible:ring-offset-0 focus:outline-none" />
                   </div>
                   <div>
                     <Label htmlFor="targetMarket" className="text-gray-700 font-medium">Target Expansion Market *</Label>
-                    <Input id="targetMarket" value={formData.targetMarket} onChange={e => handleInputChange('targetMarket', e.target.value)} placeholder="e.g., US Enterprise, SEA" required className="mt-1 border-gray-300 focus:border-blue-500" />
+                    <Input id="targetMarket" value={formData.targetMarket} onChange={e => handleInputChange('targetMarket', e.target.value)} placeholder="e.g., US Enterprise, SEA" required className="mt-1 bg-white text-black placeholder:text-gray-500 border-gray-300 focus:border-blue-500 focus-visible:ring-0 focus-visible:ring-offset-0 focus:outline-none" />
                   </div>
                 </div>
                 <div>
                   <Label htmlFor="productDescription" className="text-gray-700 font-medium">Product/Service Description *</Label>
-                  <Textarea id="productDescription" value={formData.productDescription} onChange={e => handleInputChange('productDescription', e.target.value)} placeholder="Brief description of your B2B SaaS product or service" required className="mt-1 border-gray-300 focus:border-blue-500" rows={3} />
+                  <Textarea id="productDescription" value={formData.productDescription} onChange={e => handleInputChange('productDescription', e.target.value)} placeholder="Brief description of your B2B SaaS product or service" required className="mt-1 bg-white text-black placeholder:text-gray-500 border-gray-300 focus:border-blue-500 focus-visible:ring-0 focus-visible:ring-offset-0 focus:outline-none" rows={3} />
                 </div>
               </div>
 
@@ -174,32 +174,32 @@ Please send me the GTM Readiness Scorecard based on this information.
                   <div>
                     <Label htmlFor="annualRevenue" className="text-gray-700 font-medium">Annual Revenue Range</Label>
                     <Select onValueChange={value => handleInputChange('annualRevenue', value)}>
-                      <SelectTrigger className="mt-1 border-gray-300 focus:border-blue-500">
-                        <SelectValue placeholder="Select revenue range" />
+                      <SelectTrigger className="mt-1 bg-white text-black border-gray-300 focus:ring-0 focus:ring-offset-0 focus:border-blue-500">
+                        <SelectValue placeholder="Select revenue range" className="text-gray-500" />
                       </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="under-100k">Under $100K</SelectItem>
-                        <SelectItem value="100k-500k">$100K - $500K</SelectItem>
-                        <SelectItem value="500k-1m">$500K - $1M</SelectItem>
-                        <SelectItem value="1m-5m">$1M - $5M</SelectItem>
-                        <SelectItem value="5m-10m">$5M - $10M</SelectItem>
-                        <SelectItem value="over-10m">Over $10M</SelectItem>
+                      <SelectContent className="bg-white border-gray-300 z-50">
+                        <SelectItem value="under-100k" className="text-black hover:bg-gray-100 focus:bg-gray-100">Under $100K</SelectItem>
+                        <SelectItem value="100k-500k" className="text-black hover:bg-gray-100 focus:bg-gray-100">$100K - $500K</SelectItem>
+                        <SelectItem value="500k-1m" className="text-black hover:bg-gray-100 focus:bg-gray-100">$500K - $1M</SelectItem>
+                        <SelectItem value="1m-5m" className="text-black hover:bg-gray-100 focus:bg-gray-100">$1M - $5M</SelectItem>
+                        <SelectItem value="5m-10m" className="text-black hover:bg-gray-100 focus:bg-gray-100">$5M - $10M</SelectItem>
+                        <SelectItem value="over-10m" className="text-black hover:bg-gray-100 focus:bg-gray-100">Over $10M</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
                   <div>
                     <Label htmlFor="teamSize" className="text-gray-700 font-medium">Team Size</Label>
                     <Select onValueChange={value => handleInputChange('teamSize', value)}>
-                      <SelectTrigger className="mt-1 border-gray-300 focus:border-blue-500">
-                        <SelectValue placeholder="Select team size" />
+                      <SelectTrigger className="mt-1 bg-white text-black border-gray-300 focus:ring-0 focus:ring-offset-0 focus:border-blue-500">
+                        <SelectValue placeholder="Select team size" className="text-gray-500" />
                       </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="1-10">1-10 employees</SelectItem>
-                        <SelectItem value="11-25">11-25 employees</SelectItem>
-                        <SelectItem value="26-50">26-50 employees</SelectItem>
-                        <SelectItem value="51-100">51-100 employees</SelectItem>
-                        <SelectItem value="101-250">101-250 employees</SelectItem>
-                        <SelectItem value="over-250">Over 250 employees</SelectItem>
+                      <SelectContent className="bg-white border-gray-300 z-50">
+                        <SelectItem value="1-10" className="text-black hover:bg-gray-100 focus:bg-gray-100">1-10 employees</SelectItem>
+                        <SelectItem value="11-25" className="text-black hover:bg-gray-100 focus:bg-gray-100">11-25 employees</SelectItem>
+                        <SelectItem value="26-50" className="text-black hover:bg-gray-100 focus:bg-gray-100">26-50 employees</SelectItem>
+                        <SelectItem value="51-100" className="text-black hover:bg-gray-100 focus:bg-gray-100">51-100 employees</SelectItem>
+                        <SelectItem value="101-250" className="text-black hover:bg-gray-100 focus:bg-gray-100">101-250 employees</SelectItem>
+                        <SelectItem value="over-250" className="text-black hover:bg-gray-100 focus:bg-gray-100">Over 250 employees</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
@@ -207,15 +207,15 @@ Please send me the GTM Readiness Scorecard based on this information.
                 <div>
                   <Label htmlFor="expansionTimeline" className="text-gray-700 font-medium">Expansion Timeline</Label>
                   <Select onValueChange={value => handleInputChange('expansionTimeline', value)}>
-                    <SelectTrigger className="mt-1 border-gray-300 focus:border-blue-500">
-                      <SelectValue placeholder="When do you plan to expand?" />
+                    <SelectTrigger className="mt-1 bg-white text-black border-gray-300 focus:ring-0 focus:ring-offset-0 focus:border-blue-500">
+                      <SelectValue placeholder="When do you plan to expand?" className="text-gray-500" />
                     </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="immediate">Immediately (0-3 months)</SelectItem>
-                      <SelectItem value="short-term">Short-term (3-6 months)</SelectItem>
-                      <SelectItem value="medium-term">Medium-term (6-12 months)</SelectItem>
-                      <SelectItem value="long-term">Long-term (12+ months)</SelectItem>
-                      <SelectItem value="exploring">Just exploring options</SelectItem>
+                    <SelectContent className="bg-white border-gray-300 z-50">
+                      <SelectItem value="immediate" className="text-black hover:bg-gray-100 focus:bg-gray-100">Immediately (0-3 months)</SelectItem>
+                      <SelectItem value="short-term" className="text-black hover:bg-gray-100 focus:bg-gray-100">Short-term (3-6 months)</SelectItem>
+                      <SelectItem value="medium-term" className="text-black hover:bg-gray-100 focus:bg-gray-100">Medium-term (6-12 months)</SelectItem>
+                      <SelectItem value="long-term" className="text-black hover:bg-gray-100 focus:bg-gray-100">Long-term (12+ months)</SelectItem>
+                      <SelectItem value="exploring" className="text-black hover:bg-gray-100 focus:bg-gray-100">Just exploring options</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -230,24 +230,24 @@ Please send me the GTM Readiness Scorecard based on this information.
                 <div>
                   <Label htmlFor="primaryChallenge" className="text-gray-700 font-medium">Primary Challenge *</Label>
                   <Select onValueChange={value => handleInputChange('primaryChallenge', value)}>
-                    <SelectTrigger className="mt-1 border-gray-300 focus:border-blue-500">
-                      <SelectValue placeholder="What's your biggest challenge?" />
+                    <SelectTrigger className="mt-1 bg-white text-black border-gray-300 focus:ring-0 focus:ring-offset-0 focus:border-blue-500">
+                      <SelectValue placeholder="What's your biggest challenge?" className="text-gray-500" />
                     </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="market-research">Market research and validation</SelectItem>
-                      <SelectItem value="local-presence">Lack of local presence</SelectItem>
-                      <SelectItem value="lead-generation">Lead generation and prospecting</SelectItem>
-                      <SelectItem value="cultural-differences">Understanding cultural differences</SelectItem>
-                      <SelectItem value="regulatory-compliance">Regulatory and compliance issues</SelectItem>
-                      <SelectItem value="pricing-strategy">Pricing strategy for new market</SelectItem>
-                      <SelectItem value="partner-network">Building partner network</SelectItem>
-                      <SelectItem value="sales-process">Establishing sales processes</SelectItem>
+                    <SelectContent className="bg-white border-gray-300 z-50">
+                      <SelectItem value="market-research" className="text-black hover:bg-gray-100 focus:bg-gray-100">Market research and validation</SelectItem>
+                      <SelectItem value="local-presence" className="text-black hover:bg-gray-100 focus:bg-gray-100">Lack of local presence</SelectItem>
+                      <SelectItem value="lead-generation" className="text-black hover:bg-gray-100 focus:bg-gray-100">Lead generation and prospecting</SelectItem>
+                      <SelectItem value="cultural-differences" className="text-black hover:bg-gray-100 focus:bg-gray-100">Understanding cultural differences</SelectItem>
+                      <SelectItem value="regulatory-compliance" className="text-black hover:bg-gray-100 focus:bg-gray-100">Regulatory and compliance issues</SelectItem>
+                      <SelectItem value="pricing-strategy" className="text-black hover:bg-gray-100 focus:bg-gray-100">Pricing strategy for new market</SelectItem>
+                      <SelectItem value="partner-network" className="text-black hover:bg-gray-100 focus:bg-gray-100">Building partner network</SelectItem>
+                      <SelectItem value="sales-process" className="text-black hover:bg-gray-100 focus:bg-gray-100">Establishing sales processes</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
                 <div>
                   <Label htmlFor="specificGoals" className="text-gray-700 font-medium">Specific Goals & Expectations</Label>
-                  <Textarea id="specificGoals" value={formData.specificGoals} onChange={e => handleInputChange('specificGoals', e.target.value)} placeholder="What do you hope to achieve with market expansion? Any specific targets or milestones?" className="mt-1 border-gray-300 focus:border-blue-500" rows={3} />
+                  <Textarea id="specificGoals" value={formData.specificGoals} onChange={e => handleInputChange('specificGoals', e.target.value)} placeholder="What do you hope to achieve with market expansion? Any specific targets or milestones?" className="mt-1 bg-white text-black placeholder:text-gray-500 border-gray-300 focus:border-blue-500 focus-visible:ring-0 focus-visible:ring-offset-0 focus:outline-none" rows={3} />
                 </div>
               </div>
 
@@ -258,7 +258,7 @@ Please send me the GTM Readiness Scorecard based on this information.
                       Get My GTM Scorecard
                     </>}
                 </Button>
-                <Button type="button" variant="outline" onClick={() => setIsOpen(false)} className="px-6 border-gray-300 text-gray-700 hover:bg-gray-50">
+                <Button type="button" onClick={() => setIsOpen(false)} className="px-6 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg shadow-lg transition-all duration-200">
                   Cancel
                 </Button>
               </div>

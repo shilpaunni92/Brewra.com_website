@@ -18,10 +18,10 @@ const BlogsPagination = ({ currentPage, totalPages, onPageChange }: BlogsPaginat
               <PaginationLink
                 onClick={() => onPageChange(pageNumber)}
                 isActive={currentPage === pageNumber}
-                className={`cursor-pointer ${
+                className={`cursor-pointer bg-brewra-blue hover:bg-brewra-blue-dark text-white border-brewra-blue ${
                   currentPage === pageNumber
-                    ? 'bg-brewra-blue text-white font-bold border-brewra-blue'
-                    : 'text-gray-300 hover:text-brewra-blue hover:bg-brewra-blue/10'
+                    ? 'font-bold ring-2 ring-white ring-offset-2 ring-offset-brewra-dark'
+                    : ''
                 }`}
               >
                 {pageNumber}
