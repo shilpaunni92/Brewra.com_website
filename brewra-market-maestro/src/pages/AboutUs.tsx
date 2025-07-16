@@ -21,7 +21,7 @@ const AboutUs = () => {
               <a href="/#cases" className="hover:text-brewra-blue transition-colors">Case Studies</a>
               <a href="/#contact" className="hover:text-brewra-blue transition-colors">Contact</a>
               <a href="mailto:hello@brewra.com?subject=Strategy Call Request&body=Hi, I'd like to schedule a strategy call to discuss market expansion opportunities for my B2B SaaS company.">
-                <Button variant="outline" size="sm" className="border-brewra-blue text-brewra-blue hover:bg-brewra-blue hover:text-white">
+                <Button size="sm" className="bg-brewra-blue hover:bg-brewra-blue-dark text-white transition-colors">
                   Book a Strategy Call
                 </Button>
               </a>
@@ -131,13 +131,13 @@ const AboutUs = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <a href="mailto:hello@brewra.com?subject=About Brewra - Strategy Call Request&body=Hi, I'd like to learn more about Brewra and schedule a strategy call to discuss market expansion opportunities for my B2B SaaS company.">
-                <Button size="lg" className="bg-brewra-blue hover:bg-brewra-blue-dark text-white px-8 py-4 text-lg font-semibold rounded-xl">
+                <Button size="lg" className="bg-brewra-blue hover:bg-brewra-blue-dark text-white px-8 py-4 text-lg font-semibold rounded-xl transition-colors">
                   📞 Schedule a Call
                   <ChevronRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>
               <a href="/#services">
-                <Button variant="outline" size="lg" className="border-brewra-blue text-brewra-blue hover:bg-brewra-blue hover:text-white px-8 py-4 text-lg font-semibold rounded-xl">
+                <Button size="lg" className="bg-brewra-blue hover:bg-brewra-blue-dark text-white px-8 py-4 text-lg font-semibold rounded-xl transition-colors">
                   Explore Our Services
                 </Button>
               </a>
