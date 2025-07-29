@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, Clock, User } from 'lucide-react';
@@ -48,15 +47,23 @@ Every effective GTM strategy answers four fundamental questions:
 
 <strong>What are you selling, and what specific problem does it solve?</strong> This goes beyond listing features to identify the urgent business challenge your solution addresses.
 
-**Who needs this solution most desperately?** Your ideal customer profile defines the companies that will buy, implement, and succeed with your product.
+<b>Who needs this solution most desperately?</b> Your ideal customer profile defines the companies that will buy, implement, and succeed with your product.
 
-**Why should they choose you over alternatives?** Your differentiation must be clear, defensible, and valuable enough to justify switching from their current approach.
+<b>Why should they choose you over alternatives?</b? Your differentiation must be clear, defensible, and valuable enough to justify switching from their current approach.
 
-**How will you reach these customers when they're ready to buy?** Your channel strategy determines where and how you'll connect with prospects throughout their buying journey.
+<b>How will you reach these customers when they're ready to buy?</b> Your channel strategy determines where and how you'll connect with prospects throughout their buying journey.
 
 Without clear answers to these questions, companies waste resources targeting the wrong audiences, crafting confusing messages, and choosing ineffective channels.
 
 You know you need a go-to-market strategy to make sure your initiative succeeds - but what exactly does that look like? Let's dig into the details.
+
+<div class="my-8">
+  <img 
+    src="/lovable-uploads/7331d9c0-a0b6-455a-9444-7339caa53aa0.png" 
+    alt="Go-to-Market Strategy Funnel"
+    class="w-full max-w-4xl mx-auto rounded-lg"
+  />
+</div>
 
 <span class="text-blue-500 text-xl font-semibold">1. Market focus over product features</span>
 
@@ -70,7 +77,7 @@ This problem-first approach shapes everything that follows. It determines your m
 
 The most successful SaaS companies position themselves as the obvious solution to a specific, painful problem rather than trying to be everything to everyone.
 
-<span class="text-blue-500 text-xl font-semibold">2. Macro trends validate market necessity and create urgency</span>
+<span class="text-blue-500 text-xl font-semibold">Macro trends validate market necessity and create urgency</span>
 
 Your timing matters as much as your product. Identifying relevant macro trends that prove the urgency and importance of your target problem creates market pull for your solution.
 
@@ -78,63 +85,63 @@ Consider this: 92% of SaaS companies fail within three years. This statistic dem
 
 Other powerful macro trends driving B2B SaaS adoption include:
 
-**Remote work adoption** forcing teams to digitize manual processes. Companies selling collaboration or productivity tools can leverage this shift to demonstrate urgency.
+<b>Remote work adoption</b> forcing teams to digitize manual processes. Companies selling collaboration or productivity tools can leverage this shift to demonstrate urgency.
 
-**Increasing cybersecurity threats** pushing organizations toward better security infrastructure. Security-focused SaaS solutions benefit from highlighting breach statistics and compliance requirements.
+<b>Increasing cybersecurity threats</b> pushing organizations toward better security infrastructure. Security-focused SaaS solutions benefit from highlighting breach statistics and compliance requirements.
 
-**Rising customer acquisition costs** forcing companies to focus on retention and expansion. Customer success and analytics platforms can position themselves as essential for sustainable growth.
+<b>Rising customer acquisition costs</b> forcing companies to focus on retention and expansion. Customer success and analytics platforms can position themselves as essential for sustainable growth.
 
 These trends create external pressure that makes your solution feel necessary rather than nice-to-have. They transform your sales conversations from convincing prospects they have a problem to helping them solve a problem they already recognize.
 
-<span class="text-blue-500 text-xl font-semibold">3. Precise market positioning dictates sales strategy and pricing</span>
+<span class="text-blue-500 text-xl font-semibold">Precise market positioning dictates sales strategy and pricing</span>
 
 Not all customers are created equal, and your market positioning determines everything from pricing to sales complexity.
 
 Segmenting your market into SMB, mid-market, and enterprise categories influences your entire go-to-market approach:
 
-**SMB customers** (under 200 employees) typically prefer self-service or inside sales models with simple pricing and quick implementation. They need solutions that work out of the box with minimal customization.
+<b>SMB customers</b> (under 200 employees) typically prefer self-service or inside sales models with simple pricing and quick implementation. They need solutions that work out of the box with minimal customization.
 
-**Mid-market customers** (200-2,000 employees) often require consultative selling with demonstrations, ROI justification, and some customization. They have budget for premium solutions but need clear value justification.
+<b>Mid-market customers</b> (200-2,000 employees) often require consultative selling with demonstrations, ROI justification, and some customization. They have budget for premium solutions but need clear value justification.
 
-**Enterprise customers** (over 2,000 employees) demand field sales approaches with complex deal cycles, custom implementations, and extensive support. They can pay premium prices but require extensive proof points and risk mitigation.
+</b>Enterprise customers</b> (over 2,000 employees) demand field sales approaches with complex deal cycles, custom implementations, and extensive support. They can pay premium prices but require extensive proof points and risk mitigation.
 
 Your positioning choice determines your pricing model, sales team structure, marketing channels, and product development priorities. A company targeting enterprise customers needs different capabilities than one focused on SMB adoption.
 
 The key is choosing one segment initially and dominating it before expanding to others. Companies that try to serve all segments simultaneously often struggle to excel at any.
 
-<span class="text-blue-500 text-xl font-semibold">4. Competitive analysis is non-negotiable for differentiation</span>
+<span class="text-blue-500 text-xl font-semibold">Competitive analysis is non-negotiable for differentiation</span>
 
 Understanding your competitive landscape helps identify whitespace opportunities and sharpens your positioning.
 
 Effective competitive analysis reveals three critical insights:
 
-**Direct competitors** solve the same problem with similar approaches. Study their pricing, messaging, target segments, and customer feedback to identify weaknesses you can exploit.
+<b>Direct competitors</b> solve the same problem with similar approaches. Study their pricing, messaging, target segments, and customer feedback to identify weaknesses you can exploit.
 
-**Indirect competitors** address related problems or serve adjacent markets. A project management tool competes not just with other PM software but also with email chains, spreadsheets, and communication platforms.
+<b>Indirect competitors</b> address related problems or serve adjacent markets. A project management tool competes not just with other PM software but also with email chains, spreadsheets, and communication platforms.
 
-**Whitespace opportunities** represent underserved segments with less competition. Maybe enterprise solutions are too complex for mid-market customers, or existing tools don't integrate with popular platforms your audience uses.
+<b>Whitespace opportunities</b> represent underserved segments with less competition. Maybe enterprise solutions are too complex for mid-market customers, or existing tools don't integrate with popular platforms your audience uses.
 
 This analysis prevents wasted marketing spend and helps you decide whether to compete head-to-head or find a niche where you can dominate.
 
-<span class="text-blue-500 text-xl font-semibold">5. Messaging must resonate and simplify</span>
+<span class="text-blue-500 text-xl font-semibold">Messaging must resonate and simplify</span>
 
 Your messaging strategy determines whether prospects understand your value in seconds or scroll past to evaluate alternatives.
 
 Effective B2B SaaS messaging follows a clear hierarchy:
 
-**Value proposition**: The single most important benefit you deliver to your target market. This should be specific, measurable, and relevant to urgent business challenges.
+<b>Value proposition</b>: The single most important benefit you deliver to your target market. This should be specific, measurable, and relevant to urgent business challenges.
 
-**Supporting benefits**: Three to five additional advantages that reinforce your primary value. These address different stakeholder concerns and use cases within your target accounts.
+<b>Supporting benefits</b>: Three to five additional advantages that reinforce your primary value. These address different stakeholder concerns and use cases within your target accounts.
 
-**Proof points**: Specific metrics, case studies, and testimonials that validate your claims. These provide the evidence prospects need to justify their decision to colleagues and executives.
+<b>Proof points</b>: Specific metrics, case studies, and testimonials that validate your claims. These provide the evidence prospects need to justify their decision to colleagues and executives.
 
-**Competitive differentiators**: Clear explanations of what makes you different from alternatives. These help prospects understand why they should choose you over other options they're evaluating.
+<b>Competitive differentiators</b>: Clear explanations of what makes you different from alternatives. These help prospects understand why they should choose you over other options they're evaluating.
 
 Test your messaging with actual prospects through customer interviews, A/B testing, and sales feedback. The language that generates the strongest response becomes the foundation for all your marketing communications.
 
 Remember: confused prospects don't buy. Your messaging should make it immediately clear who you serve, what problem you solve, and why you're the best choice.
 
-<span class="text-blue-500 text-xl font-semibold">6. Execution requires focused channel selection and data-driven iteration</span>
+<span class="text-blue-500 text-xl font-semibold">Execution requires focused channel selection and data-driven iteration</span>
 
 With over a dozen possible GTM channels available - from inbound content and SEO to outbound prospecting, partnerships, and events - the temptation is to try everything at once.
 
@@ -158,7 +165,7 @@ Your GTM strategy becomes your competitive advantage. When done well, it creates
 
 The investment you make in getting these elements right pays dividends for years through more efficient sales cycles, higher conversion rates, and stronger market positioning.
 
-**Ready to build a GTM strategy that drives predictable revenue growth?**
+<b>Ready to build a GTM strategy that drives predictable revenue growth?</b>
 
 Brewra Ventures partners with ambitious B2B SaaS companies to develop comprehensive go-to-market strategies that accelerate customer acquisition and scale efficiently. Our proven methodology helps founders define market positioning, craft compelling messaging, select optimal channels, and execute with precision to achieve sustainable growth targets quarter after quarter.`
     }
