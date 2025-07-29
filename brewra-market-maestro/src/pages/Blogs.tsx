@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import BlogsNavigation from '@/components/BlogsNavigation';
 import BlogsHero from '@/components/BlogsHero';
@@ -118,6 +119,15 @@ const Blogs = () => {
     category: "Customer Discovery",
     image: "/lovable-uploads/d0cf4978-88b5-4a10-9740-e4797a04e608.png"
   }, {
+    id: 14,
+    title: "How to build a Go-to-Market strategy that drives B2B SaaS success",
+    excerpt: "The product demo went flawlessly. The engineering team had solved every technical challenge, the design was intuitive, and early beta users were giving positive feedback. But six months after launch, the dashboard showed a harsh reality: dwindling trial signups, and a burn rate that made the CFO nervous.",
+    author: "Ishani Bhowmik",
+    date: "July 29, 2025",
+    readTime: "12 min read",
+    category: "GTM Strategy",
+    image: "/lovable-uploads/02d3033a-007f-4631-86fb-17815312ef28.png"
+  }, {
     id: 15,
     title: "Market Expansion in the US or UK",
     excerpt: "Expanding your B2B SaaS business into new markets can be an expensive, thrilling, but intimidating journey, particularly when it comes to highly competitive markets such as the US or UK.",
@@ -149,7 +159,7 @@ const Blogs = () => {
   } else if (currentPage === 3) {
     currentBlogs = allBlogPosts.slice(8, 12); // 4 blogs on page 3
   } else if (currentPage === 4) {
-    currentBlogs = allBlogPosts.slice(12, 14); // 2 blogs on page 4
+    currentBlogs = allBlogPosts.slice(12, 15); // 3 blogs on page 4
   } else {
     currentBlogs = [];
   }
